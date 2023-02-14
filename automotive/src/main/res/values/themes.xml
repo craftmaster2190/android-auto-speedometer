@@ -1,4 +1,4 @@
 <resources>
 
-    <style name="Theme.MyApplication" parent="android:Theme.Material.Light.DarkActionBar" />
+    <style name="Theme.AASpeedometer" parent="android:Theme.Material.Light.DarkActionBar" />
 </resources>

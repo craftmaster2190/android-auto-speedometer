@@ -1,4 +1,4 @@
-package com.craftmaster2190.myapplication
+package com.craftmaster2190.aaspeedometer
 
 import org.junit.Test
 

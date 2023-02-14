@@ -1,4 +1,4 @@
-package com.craftmaster2190.myapplication
+package com.craftmaster2190.aaspeedometer
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.craftmaster2190.myapplication", appContext.packageName)
+        assertEquals("com.craftmaster2190.aaspeedometer", appContext.packageName)
     }
 }

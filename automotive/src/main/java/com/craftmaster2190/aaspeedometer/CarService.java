@@ -1,13 +1,10 @@
-package com.craftmaster2190.myapplication;
+package com.craftmaster2190.aaspeedometer;
 
 import android.util.Log;
 
 import com.google.android.apps.auto.sdk.CarActivity;
 import com.google.android.apps.auto.sdk.CarActivityService;
 
-/**
- * @author Andrey Pavlenko
- */
 public class CarService extends CarActivityService {
 
     @Override
