@@ -6,9 +6,9 @@
         android:name="android.hardware.type.automotive"
         android:required="true" />
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,8 +20,12 @@
         android:theme="@style/Theme.AASpeedometer">
 
         <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://a4e946e7fb9147febe8487665777a602@o556685.ingest.sentry.io/4504679624343552" />
+
+        <meta-data
             android:name="com.google.android.gms.car.application"
-            android:resource="@xml/automotive_app_desc"/>
+            android:resource="@xml/automotive_app_desc" />
 
         <service
             android:name="com.craftmaster2190.aaspeedometer.CarService"

@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id "io.sentry.android.gradle" version "3.4.2"
 }
 
 android {
@@ -12,11 +13,16 @@ android {
         applicationId "com.craftmaster2190.aaspeedometer"
         minSdk 28
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
         setProperty("archivesBaseName", "Speedometer-AndroidAuto-$versionName")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     buildTypes {
@@ -29,6 +35,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'lib/auto', include: ['*.aar'])
+    implementation 'io.sentry:sentry-android:6.13.1'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.github.anastr:speedviewlib:1.6.0'
